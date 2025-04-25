@@ -16,6 +16,17 @@ app.get("/", (req, res) => {
   res.send("taurais du commencé plus tot !");
 });
 // on declare la route racine
+const auteurRoute = require("./routes/auteurRoutes");
+const categorieRoute = require("./routes/categorieRoutes");
+const tagRoute = require("./routes/tagRoutes");
+const profilAuteurRoute = require("./routes/profilAuteurRoutes");
+const adresseRoute = require("./routes/adresseRoutes");
+
+app.use("/auteurs", auteurRoute);
+app.use("/categories", categorieRoute);
+app.use("/tags", tagRoute);
+app.use("/profils", profilAuteurRoute);
+app.use("/adresses", adresseRoute); 
 app.use((req, res) => {
     res.status(404).json({ message: "Route non trouvé" });
   });
