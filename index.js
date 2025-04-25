@@ -21,12 +21,17 @@ const categorieRoute = require("./routes/categorieRoutes");
 const tagRoute = require("./routes/tagRoutes");
 const profilAuteurRoute = require("./routes/profilAuteurRoutes");
 const adresseRoute = require("./routes/adresseRoutes");
+const articleRoute = require("./routes/articleRoutes");
 
 app.use("/auteurs", auteurRoute);
 app.use("/categories", categorieRoute);
 app.use("/tags", tagRoute);
 app.use("/profils", profilAuteurRoute);
 app.use("/adresses", adresseRoute); 
+app.use("/articles", articleRoute);
+
+
+
 app.use((req, res) => {
     res.status(404).json({ message: "Route non trouvé" });
   });

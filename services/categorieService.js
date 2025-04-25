@@ -1,4 +1,4 @@
-const Categorie = require("../models/Categorie");
+const Categorie = require("../models/categories");
 const Article = require("../models/Article");
 
 class CategorieService {

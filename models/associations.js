@@ -1,13 +1,13 @@
 // models/Association.js
 const Auteur = require('./auteur');
 const Article = require('./article');
-const Categorie = require('./categorie');
+const Categorie = require('./categories');
 const Tag = require('./tag');
 const ProfilAuteur = require('./profilAuteur');
 const Adresse = require('./Adresse');
 const Avoir = require('./avoir');
 const EstTagué = require('./estTagué');
-const sequelize = require('../config/sequelize'); // Importez l'instance sequelize
+const sequelize = require('../config/sequelize'); 
 
 function associateModels() {
   // Relation 1-N (Auteur -> Article)

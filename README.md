@@ -20,5 +20,6 @@ une fois la mise en place du .env je cree immediatement apres le .gitignore
 
  je vais structuré mon avancement comme suit : je vais commencé par le premier models ensuite faire son fichier service ensuite son controller et ca rroute enfins , je testerais sur postman directement apres chaques tables ecrite et je recommence ainsi de nouveau sur un nouveau modele ; serrvice ; controller route appuse dans index.js etc 
 
+ je vais testé les fonction sequelize en alimentant la base de données en dans un premiers temps utilisé sequelize.authenticate pour me co a la bvase de données et dans un second temps la fonction sequelize.sync pour allimenté la base de donnés , le tout sera prtesent dans le fichier seed.js  cree a la racine : 
  
 
