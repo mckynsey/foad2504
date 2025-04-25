@@ -1,0 +1,32 @@
+{
+  "name": "foad25avril",
+  "version": "1.0.0",
+  "description": "je suis partie sur l'idee livre avec l'auteur et le genre mais je me suis rendue compte en cours de route que je repondais pas a l'exercices quon me demandait , j'ai donc rajouté deux nouvelles entité dans mon mcd afin d'avoir les associations manquante a savoir 0n-0n les entitées que j'ai ajouté sont tag 'pourrait aider au referencement ou a la recherche d'un livre ' et adresse auteur , donc j'ai mis les scrren au fur et a mesure de levolution de l'exo !  apres tout le readme sert en partie pour ca :D .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckynsey/foad2504.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mckynsey/foad2504/issues"
+  },
+  "homepage": "https://github.com/mckynsey/foad2504#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "sequelize-cli": "^6.6.2"
+  }
+}
