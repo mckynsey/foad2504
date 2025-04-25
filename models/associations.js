@@ -1,13 +1,11 @@
 // models/Association.js
 const Auteur = require('./auteur');
 const Article = require('./article');
-const Categorie = require('./categories');
+const Categorie = require('./categories'); // Correction de la casse
 const Tag = require('./tag');
 const ProfilAuteur = require('./profilAuteur');
 const Adresse = require('./Adresse');
-const Avoir = require('./avoir');
-const EstTagué = require('./estTagué');
-const sequelize = require('../config/sequelize'); 
+const sequelize = require('../config/sequelize');
 
 function associateModels() {
   // Relation 1-N (Auteur -> Article)
@@ -22,14 +20,14 @@ function associateModels() {
 
   // Relation N-N (Article -> Categorie)
   Article.belongsToMany(Categorie, {
-    through: Avoir,
+    through: 'avoir', // Utilisez le nom de la table directement
     foreignKey: 'id_article',
     otherKey: 'id_categorie',
     as: 'categories',
     timestamps: false,
   });
   Categorie.belongsToMany(Article, {
-    through: Avoir,
+    through: 'avoir', // Utilisez le nom de la table directement
     foreignKey: 'id_categorie',
     otherKey: 'id_article',
     as: 'articles',
@@ -38,14 +36,14 @@ function associateModels() {
 
   // Relation N-N (Article -> Tag)
   Article.belongsToMany(Tag, {
-    through: EstTagué,
+    through: 'est_tagué', // Utilisez le nom de la table directement
     foreignKey: 'id_article',
     otherKey: 'id_tag',
     as: 'tags',
     timestamps: false,
   });
   Tag.belongsToMany(Article, {
-    through: EstTagué,
+    through: 'est_tagué', // Utilisez le nom de la table directement
     foreignKey: 'id_tag',
     otherKey: 'id_article',
     as: 'articles',

@@ -4,7 +4,7 @@ const express = require("express");
 require("dotenv").config();
 // on importe le fichier .env
 
-// require("./models/Association");
+require("./models/associations");
 
 const app = express();
 // on declare l'application express
